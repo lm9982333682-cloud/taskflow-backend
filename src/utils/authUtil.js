@@ -27,7 +27,9 @@ const cookieOption = {
     sameSite: "lax",
     maxAge: 7 * 24 * 60 * 60 * 1000,
     path: "/",
+    sameSite: config.NODE_ENV === "production" ? "none" : "lax",
 };
+
 
 
 
